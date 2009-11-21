@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'EllipticLicenseStaticLibrary' target in the 'EllipticLicenseStaticLibrary' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
