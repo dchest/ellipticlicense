@@ -223,7 +223,7 @@ NSString *exampleKeyString = @"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	} while (range.location + range.length < keyLength);
 	
 	range.length = keyLength - range.location;
-	[code appendFormat:@"\t[key appendString:\"%@\"];\n", [key substringWithRange:range]];
+	[code appendFormat:@"\t[key appendString:@\"%@\"];\n", [key substringWithRange:range]];
 	
 	[code appendString:@"\t// *** End Public Key ***\n"];
 	return code;

@@ -116,14 +116,14 @@
 	if (ecKey == NULL)
 		return NO;
 
-	NSData *publicKeyData = [NSData dataWithHexString:publicKey];
+	NSData *publicKeyData = [NSData el_dataWithHexString:publicKey];
 	const unsigned char *pubBytes = [publicKeyData bytes];
 	ecKey = o2i_ECPublicKey(&ecKey, &pubBytes, [publicKeyData length]);
 	if (ecKey == NULL)
 		return NO;
 
 	if (privateKey) {
-		NSData *privateKeyData = [NSData dataWithHexString:privateKey];
+		NSData *privateKeyData = [NSData el_dataWithHexString:privateKey];
 		const unsigned char *privBytes = [privateKeyData bytes];
 		ecKey = d2i_ECPrivateKey(&ecKey, &privBytes, [privateKeyData length]);
 		if (ecKey == NULL)
@@ -147,19 +147,19 @@
 {
 	unsigned char *bytes = NULL;
 	int length = i2o_ECPublicKey(ecKey, &bytes);
-	return [[NSData dataWithBytesNoCopy:bytes length:length] hexString];
+	return [[NSData dataWithBytesNoCopy:bytes length:length] el_hexString];
 }
 
 - (NSString *)privateKey;
 {
 	unsigned char *bytes = NULL;
 	int length = i2d_ECPrivateKey(ecKey, &bytes);
-	return [[NSData dataWithBytesNoCopy:bytes length:length] hexString];
+	return [[NSData dataWithBytesNoCopy:bytes length:length] el_hexString];
 }
 
 - (NSString *)licenseKeyForName:(NSString *)name;
 {
-	NSData *digest = [[NSData dataWithStringNoNull:name] sha1Digest];
+	NSData *digest = [[NSData el_dataWithStringNoNull:name] el_sha1Digest];
 	if (!digest)
 		return nil;
 	ECDSA_SIG *signature = ECDSA_do_sign([digest bytes], digestLength, ecKey);
@@ -173,7 +173,7 @@
 	BN_bn2bin(signature->s, signatureBytes+rlen); // join two values into signatureBytes
 	NSMutableData *signatureData = [NSMutableData dataWithBytesNoCopy:signatureBytes length:rlen+slen];
 
-	return [self stringSeparatedWithDashes:[signatureData base32String]];
+	return [self stringSeparatedWithDashes:[signatureData el_base32String]];
 }
 
 - (BOOL)verifyLicenseKey:(NSString *)licenseKey forName:(NSString *)name;
@@ -195,7 +195,7 @@
 	if (!signature)
 		return NO;
 	
-	NSData *signatureData = [NSData dataWithBase32String:cleanKey];
+	NSData *signatureData = [NSData el_dataWithBase32String:cleanKey];
 	size_t partLen = [signatureData length]/2;
 	signature->r = BN_bin2bn([signatureData bytes], partLen, signature->r);
 	signature->s = BN_bin2bn([signatureData bytes] + partLen, partLen, signature->s);
@@ -203,7 +203,7 @@
 		ECDSA_SIG_free(signature);
 		return NO;		
 	}
-	NSData *digest = [[NSData dataWithStringNoNull:name] sha1Digest];
+	NSData *digest = [[NSData el_dataWithStringNoNull:name] el_sha1Digest];
 	if ([digest length] < digestLength) {
 		ECDSA_SIG_free(signature);
 		return NO;
@@ -217,7 +217,7 @@
 - (NSString *)hashStringOfLicenseKey:(NSString *)licenseKey;
 {
 	NSString *cleanLicense = [self cleanKeyFromLicenseKey:licenseKey];
-	return [[NSData dataWithStringNoNull:cleanLicense] sha1DigestString];
+	return [[NSData el_dataWithStringNoNull:cleanLicense] el_sha1DigestString];
 }
 
 - (BOOL)isBlockedLicenseKey:(NSString *)licenseKey;

@@ -3,4 +3,6 @@ Output: libEllipticLicense.a
 
 NOTE: To use it, after adding libEllipticLicense.a to your project, add -ObjC to Linker Flags in your target/project properties.
 
+NOTE about 10.6: 10.6 SDK broke -ObjC, so use -all_load in Linker Flags.
+
 It uses the same source code as framework (../Framework/)

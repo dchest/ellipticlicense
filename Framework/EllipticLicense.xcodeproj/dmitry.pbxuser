@@ -56,8 +56,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 276864669;
-			PBXWorkspaceStateSaveDate = 276864669;
+			PBXPerProjectTemplateStateSaveDate = 281551779;
+			PBXWorkspaceStateSaveDate = 281551779;
 		};
 		perUserProjectItems = {
 			0A3676AE0F7D1BD200B4662A /* PBXTextBookmark */ = 0A3676AE0F7D1BD200B4662A /* PBXTextBookmark */;
@@ -66,10 +66,8 @@
 			0A855AD30F7EDBF400AEAB7A /* PBXTextBookmark */ = 0A855AD30F7EDBF400AEAB7A /* PBXTextBookmark */;
 			0A855AD70F7EDBF400AEAB7A /* PBXTextBookmark */ = 0A855AD70F7EDBF400AEAB7A /* PBXTextBookmark */;
 			0A855B4A0F80C1E800AEAB7A /* PBXTextBookmark */ = 0A855B4A0F80C1E800AEAB7A /* PBXTextBookmark */;
+			0AA3FBDE10C824AA00F2DB90 /* PBXTextBookmark */ = 0AA3FBDE10C824AA00F2DB90 /* PBXTextBookmark */;
 			0AC6C7A31073F47A00240443 /* PBXTextBookmark */ = 0AC6C7A31073F47A00240443 /* PBXTextBookmark */;
-			0AD637F51080A57100E1FAC2 /* PBXTextBookmark */ = 0AD637F51080A57100E1FAC2 /* PBXTextBookmark */;
-			0AD637F61080A57100E1FAC2 /* PBXTextBookmark */ = 0AD637F61080A57100E1FAC2 /* PBXTextBookmark */;
-			0AD637F71080A57100E1FAC2 /* PBXTextBookmark */ = 0AD637F71080A57100E1FAC2 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 0A36760F0F7D152D00B4662A /* Source Control */;
 		userBuildSettings = {
@@ -106,16 +104,16 @@
 	};
 	0A3676A40F7D1A0100B4662A /* EllipticLicense.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1860, 1035}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1629, 897}}";
 			sepNavSelRange = "{2607, 0}";
-			sepNavVisRange = "{874, 1965}";
+			sepNavVisRange = "{0, 2328}";
 		};
 	};
 	0A3676A50F7D1A0100B4662A /* EllipticLicense.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {820, 4245}}";
-			sepNavSelRange = "{3973, 26}";
-			sepNavVisRange = "{3589, 1199}";
+			sepNavIntBoundsRect = "{{0, 0}, {806, 3783}}";
+			sepNavSelRange = "{3648, 0}";
+			sepNavVisRange = "{940, 1093}";
 		};
 	};
 	0A3676AE0F7D1BD200B4662A /* PBXTextBookmark */ = {
@@ -173,16 +171,16 @@
 	};
 	0A855A190F7EBA4F00AEAB7A /* NSData+ELAdditions.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {806, 660}}";
-			sepNavSelRange = "{1397, 0}";
-			sepNavVisRange = "{0, 1778}";
+			sepNavIntBoundsRect = "{{0, 0}, {806, 645}}";
+			sepNavSelRange = "{904, 0}";
+			sepNavVisRange = "{0, 1251}";
 		};
 	};
 	0A855A1A0F7EBA4F00AEAB7A /* NSData+ELAdditions.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {806, 4080}}";
-			sepNavSelRange = "{1397, 0}";
-			sepNavVisRange = "{0, 2566}";
+			sepNavIntBoundsRect = "{{0, 0}, {1125, 3549}}";
+			sepNavSelRange = "{162, 0}";
+			sepNavVisRange = "{0, 1948}";
 		};
 	};
 	0A855AD30F7EDBF400AEAB7A /* PBXTextBookmark */ = {
@@ -256,6 +254,22 @@
 		originalNumberOfMultipleMatches = 0;
 		state = 0;
 	};
+	0AA3FBDE10C824AA00F2DB90 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0AA3FBDF10C824AA00F2DB90 /* CFBase.h */;
+		name = "CFBase.h: 86";
+		rLen = 0;
+		rLoc = 2651;
+		rType = 0;
+		vrLen = 1398;
+		vrLoc = 2979;
+	};
+	0AA3FBDF10C824AA00F2DB90 /* CFBase.h */ = {
+		isa = PBXFileReference;
+		name = CFBase.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Versions/A/Headers/CFBase.h;
+		sourceTree = "<absolute>";
+	};
 	0AC6C7A31073F47A00240443 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 0A76BA0D10701A340048097B /* CFBase.h */;
@@ -265,36 +279,6 @@
 		rType = 0;
 		vrLen = 1500;
 		vrLoc = 2979;
-	};
-	0AD637F51080A57100E1FAC2 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0A3676A50F7D1A0100B4662A /* EllipticLicense.m */;
-		name = "EllipticLicense.m: 153";
-		rLen = 26;
-		rLoc = 3973;
-		rType = 0;
-		vrLen = 1199;
-		vrLoc = 3589;
-	};
-	0AD637F61080A57100E1FAC2 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0A3676A40F7D1A0100B4662A /* EllipticLicense.h */;
-		name = "EllipticLicense.h: 59";
-		rLen = 0;
-		rLoc = 2607;
-		rType = 0;
-		vrLen = 1965;
-		vrLoc = 874;
-	};
-	0AD637F71080A57100E1FAC2 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0A3676A40F7D1A0100B4662A /* EllipticLicense.h */;
-		name = "EllipticLicense.h: 59";
-		rLen = 0;
-		rLoc = 2607;
-		rType = 0;
-		vrLen = 1965;
-		vrLoc = 874;
 	};
 	32DBCF5E0370ADEE00C91783 /* EllipticLicense_Prefix.pch */ = {
 		uiCtxt = {

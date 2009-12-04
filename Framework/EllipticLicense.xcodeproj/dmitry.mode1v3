@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>EllipticLicense.h</string>
+								<string>CFBase.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>EllipticLicense.h</string>
+										<string>CFBase.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0AD637F71080A57100E1FAC2</string>
+										<string>0AA3FBDE10C824AA00F2DB90</string>
 										<key>history</key>
 										<array>
 											<string>0A3676AE0F7D1BD200B4662A</string>
@@ -341,8 +341,6 @@
 											<string>0A855B4A0F80C1E800AEAB7A</string>
 											<string>0A81282A0F852499007AC9E6</string>
 											<string>0AC6C7A31073F47A00240443</string>
-											<string>0AD637F51080A57100E1FAC2</string>
-											<string>0AD637F61080A57100E1FAC2</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -400,9 +398,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>0AD637F81080A57100E1FAC2</string>
+				<string>0AA3FBE010C824AA00F2DB90</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>0AD637F91080A57100E1FAC2</string>
+				<string>0AA3FBE110C824AA00F2DB90</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -538,6 +536,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>0A855A090F7EB67C00AEAB7A</string>
 		<string>0A3676AB0F7D1B5E00B4662A</string>
 		<string>/Users/dmitry/Projects/EllipticLicense/Framework/EllipticLicense.xcodeproj</string>
 	</array>
@@ -619,7 +618,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>0A3676AB0F7D1B5E00B4662A</string>
-				<string>0AD637FA1080A57100E1FAC2</string>
+				<string>0AA3FBE210C824AA00F2DB90</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -1361,18 +1360,22 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {500, 315}}</string>
+								<string>{{0, 0}, {546, 275}}</string>
 								<key>RubberWindowFrame</key>
-								<string>30 646 500 356 0 0 1680 1028 </string>
+								<string>20 446 546 316 0 0 1280 778 </string>
+								<key>XCRefactoringSplitViewLowerHeight</key>
+								<real>224</real>
+								<key>XCRefactoringSplitViewTotalHeight</key>
+								<real>455</real>
 							</dict>
 							<key>Module</key>
 							<string>XCRefactoringModule</string>
 							<key>Proportion</key>
-							<string>315pt</string>
+							<string>275pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>315pt</string>
+					<string>275pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -1386,11 +1389,11 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>0A855A090F7EB67C00AEAB7A</string>
-				<string>0A855D8B0F80FE4B00AEAB7A</string>
+				<string>0AA3FBE310C824AA00F2DB90</string>
 				<string>0A855A080F7EB67C00AEAB7A</string>
 			</array>
 			<key>WindowString</key>
-			<string>30 646 500 356 0 0 1680 1028 </string>
+			<string>20 446 546 316 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>0A855A090F7EB67C00AEAB7A</string>
 			<key>WindowToolIsVisible</key>

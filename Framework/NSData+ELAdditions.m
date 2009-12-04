@@ -28,7 +28,7 @@
 
 @implementation NSData (ELAdditions)
 
-+ (NSData *)dataWithBase32String:(NSString *)encoded;
++ (NSData *)el_dataWithBase32String:(NSString *)encoded;
 {
 	/* First valid character that can be indexed in decode lookup table */
 	static int charDigitsBase = '2';
@@ -135,7 +135,7 @@
 	return [NSData dataWithBytes:bytes length:sizeof(bytes)];
 }
 
-- (NSString *)base32String;
+- (NSString *)el_base32String;
 {
 	/* Lookup table used to canonically encode() groups of data bits */
 	static char canonicalChars[] =
@@ -200,19 +200,19 @@
 	return [NSString stringWithCString:chars encoding:NSASCIIStringEncoding];
 }
 
-- (NSData *)sha1Digest;
+- (NSData *)el_sha1Digest;
 {
 	unsigned char digest[SHA_DIGEST_LENGTH];
 	SHA1([self bytes], [self length], digest);
 	return [NSData dataWithBytes:digest length:SHA_DIGEST_LENGTH];
 }
 
--  (NSString *)sha1DigestString;
+-  (NSString *)el_sha1DigestString;
 {
-	return [[self sha1Digest] hexString];
+	return [[self el_sha1Digest] el_hexString];
 }
 
-- (NSString *)hexString;
+- (NSString *)el_hexString;
 {
 	const unsigned char *bytes = [self bytes];
 	NSMutableString *hexString = [[[NSMutableString alloc] initWithCapacity:[self length] * 2] autorelease];
@@ -221,7 +221,7 @@
 	return [hexString uppercaseString];
 }
 
-+ (NSData *)dataWithHexString:(NSString *)hexString;
++ (NSData *)el_dataWithHexString:(NSString *)hexString;
 {
 	NSMutableData *data = [NSMutableData dataWithCapacity:[hexString length]/2];
 	char *chars = (char *)[hexString UTF8String];
@@ -251,13 +251,13 @@
 	return data;
 }
 
-+ (NSData *)dataWithString:(NSString *)string;
++ (NSData *)el_dataWithString:(NSString *)string;
 {
 	const char *bytes = [string UTF8String];
 	return [NSData dataWithBytes:bytes length:strlen(bytes)];
 }
 
-+ (NSData *)dataWithStringNoNull:(NSString *)string;
++ (NSData *)el_dataWithStringNoNull:(NSString *)string;
 {
 	const char *bytes = [string UTF8String];
 	size_t lengthWithoutNull = strlen(bytes)-1;

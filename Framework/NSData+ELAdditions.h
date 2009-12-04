@@ -28,13 +28,13 @@
 
 @interface NSData (ELAdditions)
 
-+ (NSData *)dataWithBase32String:(NSString *)base32;
-- (NSString *)base32String;
-- (NSData *)sha1Digest;
-- (NSString *)sha1DigestString;
-+ (NSData *)dataWithHexString:(NSString *)hexString;
-- (NSString *)hexString;
-+ (NSData *)dataWithString:(NSString *)string;
-+ (NSData *)dataWithStringNoNull:(NSString *)string;
++ (NSData *)el_dataWithBase32String:(NSString *)base32;
+- (NSString *)el_base32String;
+- (NSData *)el_sha1Digest;
+- (NSString *)el_sha1DigestString;
++ (NSData *)el_dataWithHexString:(NSString *)hexString;
+- (NSString *)el_hexString;
++ (NSData *)el_dataWithString:(NSString *)string;
++ (NSData *)el_dataWithStringNoNull:(NSString *)string;
 
 @end
