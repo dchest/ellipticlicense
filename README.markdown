@@ -40,6 +40,12 @@ License
 
 EllipticLicense is licensed under Apache 2 license. See LICENSE. License!
 
+
+Mailing list
+------------
+
+Send email to <ellipticlicense@librelist.com> to subscribe.
+
 * * *
 
 Made by [Coding Robots](http://www.codingrobots.com)
