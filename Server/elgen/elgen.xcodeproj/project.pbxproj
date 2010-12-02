@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A24DEC80F85A5960039B0A1 /* libcrypto-el.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A24DEC70F85A5960039B0A1 /* libcrypto-el.a */; };
+		0A91F0F612A7ADC500909BFE /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A91F0F512A7ADC500909BFE /* libcrypto.dylib */; };
 		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* elgen.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* elgen.1 */; };
 /* End PBXBuildFile section */
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		0A24DEC70F85A5960039B0A1 /* libcrypto-el.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-el.a"; path = "../../lib/libcrypto-el.a"; sourceTree = SOURCE_ROOT; };
+		0A91F0F512A7ADC500909BFE /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
 		8DD76FB20486AB0100D96B5E /* elgen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = elgen; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* elgen.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = elgen.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A24DEC80F85A5960039B0A1 /* libcrypto-el.a in Frameworks */,
+				0A91F0F612A7ADC500909BFE /* libcrypto.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +50,7 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
-				0A24DEC70F85A5960039B0A1 /* libcrypto-el.a */,
+				0A91F0F512A7ADC500909BFE /* libcrypto.dylib */,
 			);
 			name = elgen;
 			sourceTree = "<group>";
@@ -107,7 +107,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "elgen" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* elgen */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -172,8 +179,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "../../openssl/include//**";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 				SYMROOT = ../../Builds;
 			};
 			name = Debug;
@@ -187,7 +195,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "../../openssl/include//**";
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 				SYMROOT = ../../Builds;
 			};
 			name = Release;
