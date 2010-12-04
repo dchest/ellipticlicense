@@ -7,7 +7,7 @@ Project goal: replacement for AquaticPrime with shorter keys and similar or bett
 
 *Documentation will be available later... For now, read EllipticLicense.h*
 
-Watch screencast: http://www.youtube.com/watch?v=lcT8YcbUpg0
+[Watch screencast](http://www.youtube.com/watch?v=lcT8YcbUpg0)
 
 ## Example keys
 
