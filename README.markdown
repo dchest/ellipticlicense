@@ -7,6 +7,8 @@ Project goal: replacement for AquaticPrime with shorter keys and similar or bett
 
 *Documentation will be available later... For now, read EllipticLicense.h*
 
+Watch screencast: http://www.youtube.com/watch?v=lcT8YcbUpg0
+
 ## Example keys
 
 112-bit curve (~ equivalent to RSA-512, 2^56 bit security):
