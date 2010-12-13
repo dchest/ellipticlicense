@@ -217,7 +217,7 @@ NSString *exampleKeyString = @"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	NSRange range = NSMakeRange(0, 0);
 	range.length += (random() % (keyLength/4-2)) + 1;
 	do {
-		[code appendFormat:@"\t[key appendString:\"%@\"];\n", [key substringWithRange:range]];
+		[code appendFormat:@"\t[key appendString:@\"%@\"];\n", [key substringWithRange:range]];
 		range.location += range.length;
 		range.length = (random() % (keyLength/4-2)) + 1;
 	} while (range.location + range.length < keyLength);
